@@ -15,7 +15,7 @@ int main(int argc, char **argv){
   fclose(authf);
   if(strcmp(auth,"no")!=0){
     FILE* flagf;
-    flagf = fopen("/problems/02bd7d8f7e9c13a19940fd1116234469/flag","r");
+    flagf = fopen("../../problems/02bd7d8f7e9c13a19940fd1116234469/flag","r");
     char flag[64];
     fgets(flag,64,flagf);
     printf("Oh. Well the auth file doesn't say no anymore so... Here's the flag: %s",flag);
